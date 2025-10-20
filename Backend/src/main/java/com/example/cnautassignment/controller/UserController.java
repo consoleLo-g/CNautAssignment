@@ -74,12 +74,6 @@ public class UserController {
         return ResponseEntity.ok(updatedUser);
     }
 
-    // @GetMapping("/users/{id}/popularity")
-    // public ResponseEntity<Double> getPopularity(@PathVariable String id) {
-    // User u = userService.getUserById(id);
-    // double pop = userService.recomputePopularityForUser(u);
-    // return ResponseEntity.ok(pop);
-    // }
     @GetMapping("/health")
     public ResponseEntity<String> health() {
         return ResponseEntity.ok("OK");
