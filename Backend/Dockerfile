@@ -22,7 +22,7 @@ FROM eclipse-temurin:17-jdk-jammy
 WORKDIR /app
 
 # Copy jar from previous stage
-COPY --from=build /app/target/CNautAssignment-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/cnautassignment-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port 8080
 EXPOSE 8080
