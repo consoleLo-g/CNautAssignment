@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import HobbyItem from './HobbyItem';
+import { API_BASE } from '../store/userSlice';
 
 interface SidebarProps {
   isVisible?: boolean;
@@ -12,7 +13,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible = true }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    axios.get<string[]>('http://localhost:8080/api/hobbies')
+    axios.get<string[]>(`${API_BASE}/hobbies`)
       .then(res => setHobbies(res.data))
       .catch(err => console.error(err));
   }, []);
