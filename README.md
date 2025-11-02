@@ -2,7 +2,7 @@
 
 A full-stack project with **Spring Boot backend** and **React + TypeScript frontend** using Vite.  
 
-This project visualizes users and their relationships, supports CRUD operations, hobbies management, and provides a popularity score system. The backend exposes REST APIs documented via **Swagger**, and the frontend is an interactive graph-based visualization.
+This project visualizes users and their relationships, supports CRUD operations, hobbies management, and provides a popularity score system. The backend exposes REST APIs documented via **Swagger**, and the frontend is an interactive graph-based visualization. The final work can be seen by visiting[takes 1-minutes for loading] - https://cnautassignment-frontend.onrender.com/ 
 
 ---
 
